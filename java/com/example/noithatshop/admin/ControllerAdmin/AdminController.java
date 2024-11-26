@@ -12,8 +12,15 @@ import java.util.List;
 @Controller
 public class AdminController extends BaseController {
 
+    //Dã thay đổi
+
     @GetMapping("/login")
     public String showLoginForm() {
+        return "admin/login";
+    }
+
+    @GetMapping("/login")
+    public String show() {
         return "admin/login";
     }
 
